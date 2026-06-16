@@ -1,0 +1,9 @@
+services:
+  digibyte-node:
+    build: .
+    container_name: digibyte
+    volumes:
+      - ./data:/data
+      - ./digibyte.conf:/data/.dgb/digibyte.conf
+    restart: unless-stopped
+    network_mode: "host"
