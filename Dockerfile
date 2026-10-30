@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt
-RUN wget https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.2/digibyte-8.26.2-x86_64-linux-gnu.tar.gz \
-    && tar -xzvf digibyte-8.26.2-x86_64-linux-gnu.tar.gz \
+RUN wget https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.2/digibyte-9.26.7-x86_64-linux-gnu.tar.gz \
+    && tar -xzvf digibyte-9.26.7-x86_64-linux-gnu.tar.gz \
     && cp -r digibyte-8.26.2/bin/* /usr/local/bin/ \
     && rm -rf digibyte-8.26.2*
 
